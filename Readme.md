@@ -18,9 +18,7 @@ There are other searches and dashboards available but they can not be reached fr
 
 # Prerequisites 
 
-Before installing the app you will need to Configure Collectd. See the 
-
-[Configure Collectd]([doc/configuring-collectd.md) page. 
+Before installing the app you will need to Configure Collectd. See the [Configure Collectd]([doc/configure-collectd.md) page. 
 
 
 # Download the CollectdApp 

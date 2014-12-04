@@ -1,6 +1,6 @@
 # CollectdApp-1.0 
 
-The Collectd App provide dashboard, data type mappings for collectd input plugins. Collectd is a monitoring daemon run on unix systems gathering system health metrics.
+Collectd is a monitoring daemon run on unix systems gathering system health metrics. The Collectd App provides Workspaces and a datatype mapping for collectd input plugins. 
 
 ## Downloads 
 

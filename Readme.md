@@ -4,8 +4,7 @@ The Collectd App provide dashboard, data type mappings for collectd input plugin
 
 ## Downloads 
 
- * [CollectdApp]
- * 
+ * [CollectdApp](https://github.com/logscape/CollectdApp/raw/master/dist/CollectdApp-0.5.zip)
 
 
 ## Configuration

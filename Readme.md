@@ -17,9 +17,7 @@ Logscape imports collectd data using the graphite write plugin. Most linux distr
 LoadPlugin write_graphite
 <Plugin write_graphite>
   <Carbon>
-    #Host "10.28.0.150"
     Host "10.28.1.159"
-    #Port "8991"
     Port "9991"
     Prefix "LOGSCAPETOKEN:-6e6e377b:149f1428863:-7fc6 LOGSCAPETAG:collectd type:collectd "
     Postfix ""
@@ -30,12 +28,10 @@ LoadPlugin write_graphite
 </Plugin>
 ```
 
+Replace Host with the location of your logscape installation. The LOGSCAPETOKEN and LOGSCAPETAG are used when pointing collectd to Logcape Cloud. Replace LOGSCAPETOKEN with your unique otoken. 
+
 
 The LoadPlugin directive is required to enable the plugin. Restart collectd to start importing metrics in Logscape
-
-
-##
-
 
  The CollectdApp has 4 main categories.
 
@@ -45,13 +41,8 @@ The LoadPlugin directive is required to enable the plugin. Restart collectd to s
  * Memory - Memory Utilization, Caches, Virtual Memory stats such as page faults, paging in and out 
  * Network - Network Packets, Errors 
  * Disk - Disk Utilization, Operations and disk time ( what is reported by Collectd can not be trusted ) 
- * Custom - Tutorial on how to add a plugin 
 
-There are other searches and dashboards available but they can not be reached from the Collectd Home Workspace. These are 
-
- * Processes - Process State, running, sleeping etc
- * Protocols - Network protocol state. Ports open and so on 
- *  
+The collectd data type based on the Collectd schema for reporting metric data. See the [collectd naming schema](https://collectd.org/wiki/index.php/Naming_schema)
 
 ## Sample Screenshots
 

@@ -1,4 +1,41 @@
-# 
+# CollectdApp-1.0 
+
+The Collectd App provide dashboard, data type mappings for collectd input plugins. Collectd is a monitoring daemon run on unix systems gathering system health metrics.
+
+## Downloads 
+
+ * [CollectdApp]
+ * 
+
+
+## Configuration
+
+Logscape imports collectd data using the graphite write plugin. Most linux distributions will have this plugin installed. To configure update the Prefix and Postfix parameters of the graphite plugin as shown in the example below.
+
+
+```xml
+LoadPlugin write_graphite
+<Plugin write_graphite>
+  <Carbon>
+    #Host "10.28.0.150"
+    Host "10.28.1.159"
+    #Port "8991"
+    Port "9991"
+    Prefix "LOGSCAPETOKEN:-6e6e377b:149f1428863:-7fc6 LOGSCAPETAG:collectd type:collectd "
+    Postfix ""
+    StoreRates false
+    AlwaysAppendDS false
+    EscapeCharacter ""
+  </Carbon>
+</Plugin>
+```
+
+
+The LoadPlugin directive is required to enable the plugin. Restart collectd to start importing metrics in Logscape
+
+
+##
+
 
  The CollectdApp has 4 main categories.
 
@@ -16,23 +53,23 @@ There are other searches and dashboards available but they can not be reached fr
  * Protocols - Network protocol state. Ports open and so on 
  *  
 
-# Prerequisites 
-
-Before installing the app you will need to Configure Collectd. See the [Configure Collectd](doc/configure-collectd.md) page. 
+## Sample Screenshots
 
 
-# Download the CollectdApp 
+### Sensors
 
- Download the Collectd App and then deploy it. 
+![](docs/images/collectd_sensors.png) 
 
+### System Load 
 
+![](docs/images/collectd_load.png) 
 
-# Configure your Collectd Data Source  
+## Network 
+![](docs/images/collectd_network.png)
 
- * Add a data source called collectd 
- * Point the data source to $MYOUTPUT_SERVER_
- * Save   
+## Memory 
 
+![](docs/images/collectd_memory.png)
 
-#  Exploring the App
+### 
 

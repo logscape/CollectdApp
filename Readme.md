@@ -58,18 +58,18 @@ There are other searches and dashboards available but they can not be reached fr
 
 ### Sensors
 
-![](docs/images/collectd_sensors.png) 
+![](doc/images/collectd_sensors.png) 
 
 ### System Load 
 
-![](docs/images/collectd_load.png) 
+![](doc/images/collectd_load.png) 
 
 ## Network 
-![](docs/images/collectd_network.png)
+![](doc/images/collectd_network.png)
 
 ## Memory 
 
-![](docs/images/collectd_memory.png)
+![](doc/images/collectd_memory.png)
 
 ### 
 
